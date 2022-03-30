@@ -45,4 +45,17 @@ public class Queue<T extends Comparable<T>> {
         return (T) temp.data;
 
     }
+
+    public void addFront(T item) {
+        Node<T> node = new Node<T>(item);
+        node.next = head;
+        head = node;
+
+    }
+
+    public T removeFront() {
+        T data = dequeue();
+        return data;
+    }
+
 }

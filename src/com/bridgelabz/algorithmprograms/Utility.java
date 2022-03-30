@@ -34,4 +34,13 @@ public class Utility<T extends Comparable<? super T>>  {
         return 0;
     }
 
+    public static String ScanString() {
+        try {
+            return scan.nextLine();
+        }catch(Exception e) {
+            System.out.println();
+        }
+        return null;
+    }
+
 }
