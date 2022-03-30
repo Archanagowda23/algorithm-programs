@@ -12,4 +12,26 @@ public class Utility<T extends Comparable<? super T>>  {
     public static boolean isLeap(int year) {
         return ((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0);
     }
+
+    public static int scanInt()
+    {
+        try {
+            return scan.nextInt();
+        }catch(Exception e) {
+            System.out.println(e);
+        }
+        return 0;
+    }
+
+    public static int inputInteger()
+    {
+        try {
+            return scan.nextInt();
+        }
+        catch (Exception e) {
+            System.out.println(e);
+        }
+        return 0;
+    }
+
 }
